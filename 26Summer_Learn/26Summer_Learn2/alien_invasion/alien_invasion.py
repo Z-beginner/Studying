@@ -15,7 +15,7 @@ class AlienInvasion:
             (self.settings.screen_width, self.settings.screen_height)) #创建游戏窗口
         pygame.display.set_caption("Alien Invasion") #设置窗口标题
         self.ship = Ship(self)
-        self.bullets = pygame.sprite.Group()
+        self.bullets = pygame.sprite.Group() #创建一个对象用于装sprite
 
     def run_game(self):
         while True:
